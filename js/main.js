@@ -13,3 +13,22 @@ window.show.addEventListener('click', () => {
 window.hide.addEventListener('click', () => {
     window.dialog.close()
 })
+
+let modal2 = document.getElementById("dialog2")
+
+window.carrito.addEventListener('click', () => {
+    modal2.showModal()
+    console.log("asfsdsvdfb")
+})
+
+window.pagar.addEventListener('click', () => {
+    modal2.close()
+})
+
+window.cerrar.addEventListener('click', () => {
+    window.dialog.close()
+})
+
+window.salir.addEventListener('click', () => {
+    window.dialog.close()
+})

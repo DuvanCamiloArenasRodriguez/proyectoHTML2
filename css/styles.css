@@ -253,6 +253,8 @@ button:hover {
     margin: 0;
 }
 
+
+/* Modal 1 */
 .dialogo1 {
     width: 40vw;
     height: 100%;
@@ -260,6 +262,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 4px;
+    border-color: #0D9276;
     /* background-color: #0D9276; */
 }
 
@@ -302,12 +306,114 @@ input {
     margin-left: 2vw;
 }
 
-.salir {
+.cerrar, .salir{
     font-size: 3rem;
     color: rgb(193, 0, 0);
     align-self: flex-end;
     /* margin: 0; */
 }
+
+
+/* Modal 2 */
+.dialogo2 {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    border-color: #0D9276;
+    /* background-color: #0D9276; */
+    /* overflow-y: scroll; */
+}
+
+.pagos {
+    /* height: 50%; */
+    overflow-y: scroll;
+}
+
+.dialogo2 h3 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+}
+
+.dialogo2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.dialogo2 h4 {
+    font-size: 1rem;
+    margin: 7px 0 40px 0;
+}
+
+/* .contenido1 div {
+    display: flex;
+    flex-direction: column;
+} */
+
+.contenido1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: flex-start;
+    align-items: start;
+    justify-items: flex-start;
+    margin-bottom: 15px;
+    border-color: #0D9276;
+}
+
+.dialogo2 input {
+    width: 60%;
+    height: 10%;
+    margin: 0;
+}
+
+.dialogo2 p {
+    justify-self: end;
+    align-self: flex-end;
+    margin: 0 15px 0 0;
+}
+
+.pago1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px 0 15px 0;
+    width: 100%;
+}
+
+.contenido2 p {
+    margin-bottom: 15px;
+}
+
+.contenido2 button {
+    /* width: ; */
+    padding: 7px 20px 7px 20px;
+    font-size: 1rem;
+}
+
+.contenido2 h4 {
+    margin-left: 15px;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+/* .contenido1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+} */
+
+
+
 
 /* Media query */
 @media (max-width: 768px) {
@@ -453,7 +559,7 @@ input {
     }
 
     
-
+    
 
     .dialogo1 {
         width: 90vw;
@@ -463,6 +569,7 @@ input {
         align-items: center;
         justify-content: center;
         overflow-y: scroll;
+        
         /* background-color: #0D9276; */
     }
     
@@ -484,4 +591,58 @@ input {
         flex-direction: column;
         width: 100%;
     }
-}
+
+    /* Media para dialogo 2 */
+    .dialogo2 {
+        width: 90vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        border-color: #0D9276;
+        /* background-color: #0D9276; */
+        /* overflow-y: scroll; */
+    }
+
+    .dialogo2 img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .dialogo2 input {
+        width: 90%;
+        height: 10%;
+        margin-left: 5px;
+    }
+
+    .dialogo2 h4 {
+        font-size: 1rem;
+        margin: 7px 0 15px 0;
+    }
+
+    .contenido1 p{
+        margin-right: 6px;
+        
+    }
+
+    /* .contenido1 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: flex-start;
+        align-items: start;
+        justify-items: flex-start;
+        margin-bottom: 15px;
+        border-color: #0D9276;
+    } */
+
+    /* .contenido1 p {
+        margin-bottom: 15px;
+        width: 70%;
+    } */
+
+    /* .contenido1 h4{
+        align-items: end;
+    } */
+} 
