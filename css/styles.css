@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
 
 :root {
@@ -11,13 +9,26 @@
     font-size: 15px;
     margin: 0;
     padding: 0;
+    /* outline: 2px solid orange; */
+    /* font-family: 'Poppins 200', sans-serif; */
 }
+
+/* body {
+    overflow-y: scroll;
+} */
 
 header {
     background-color: #40A2E3;
     width: 100%;
- 
+    /* position: relative; */
+    padding-top: 20px;
+    /* height: 20vh; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
+
+
 
 nav {
     display: flex;
@@ -25,13 +36,343 @@ nav {
     /* border: solid 1px red; */
     align-items: center;
     align-content: center;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     padding-top: 20px;
+    justify-content: space-around;
+    
+    background-color: #40A2E3;
+    
+    width: 100%;
+    
+    
 }
 
 nav a {
-    padding: 10px;
-    font-size: 1.7rem;
+    padding: 10px 10px 13px 10px;
+    font-size: 1.3rem;
     text-decoration: none;
     color: #FFF6E9;
+    /* text-decoration-line:underline; */
+    text-align: center;
+
+}
+
+nav a:hover {
+    background-color: #0D9276;
+    transition-duration: 0.7s;
+}
+
+#btnMenu {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#carrito  {
+    font-size: 3rem;
+    color: #FFF6E9;
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    margin: 0px 25px 0 0;
+}
+
+.titulo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+h1 {
+    color: #FFF6E9;
+    font-size: 2.7rem;
+    text-align: center;
+    margin-left: 25px;
+    /* font-family: 'Poppins 200', sans-serif; */
+}
+
+
+.televisor {
+    display: flex;
+    margin: 10px ;
+    flex-direction: row;
+    height: 60vh;
+    /* border: solid 1px red; */
+}
+
+.televisores {
+    /* overflow-y: scroll; */
+    margin-top: 130px;
+}
+
+/* .televisor1 {
+    margin-top: 150px;
+} */
+
+.fotos {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: start;
+    justify-content: center;
+    justify-items: flex-start;
+    width: 50vw;
+    /* border: solid 1px green; */
+}
+
+.fotos img:hover {
+    scale: 1.1;
+}
+
+.pequena {
+    width: 100%;
+    height: 10vh;
+    object-fit: contain;
+}
+
+.grande {
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
+}
+
+.grandee {
+    /* border: solid 1px blue; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.texto  {
+    width: 50vw;
+    margin: 15px;
+    position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.texto h3 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    /* color: #003b2f; */
+    /* margin-top: ; */
+}
+
+.estrella {
+    color: rgb(213, 209, 0);
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    padding-top: 13px;
+}
+
+div i {
+    padding-left: 15px;
+}
+
+.texto li b {
+    font-size: 1.2rem;
+    
+}
+
+.texto li {
+    padding: 4px 4px 4px 15px;
+}
+
+.texto h4{
+    font-size: 1.4rem;
+    padding: 15px;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 11px 15px 11px 15px;
+    font-family: 'Poppins 200', sans-serif;
+    background-color: #40A2E3;
+    border: none;
+    border-radius: 3px;
+    margin-left: 15px;
+    color: #FFF6E9;
+}
+
+button:hover {
+    background-color: #BBE2EC;
+    transition: 0.6s;
+   
+}
+
+.envio {
+    width: 13vw;
+    height: 13vh;
+    border: solid 1px #40A2E3;
+    border-radius: 3px;
+    text-align: center;
+    position: absolute;
+    right: 80px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.envio p {
+    font-size: 1.1rem;
+    padding: 3px;
+}
+
+.envio i {
+    font-size: 2rem;
+    color: #0D9276;
+}
+
+.gratis {
+    color: #40A2E3;
+}
+
+
+/* Media query */
+@media (max-width: 768px) {
+    #btnMenu {
+        display: flex;
+        /* color: #fff; */
+        width: 13%;
+        height: 20%;
+        font-size: x-large;
+        color: #fff;
+    }
+
+    .menu {
+        margin-top: 20%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s;
+        padding: 0.3rem;
+        background-color: #40A2E3;
+        height: 90%;
+        z-index: 100;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .menu.active {
+        transform: translateX(0%);
+    }
+
+
+
+    header {
+        padding-bottom: 30px;
+        /* position: relative; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #40A2E3;
+        width: 100%;
+        /* position: relative; */
+        padding-top: 20px;
+        display: flex;
+        align-content: center;
+    }
+
+    .televisor {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .fotos {
+        width: 100%;
+    }
+
+    .grandee img:hover {
+        scale: 1;
+    }
+
+    .texto {
+        /* border: solid 1px green; */
+        width: 95%;
+        /* margin-left: 7px; */
+    }
+
+    .envio {
+        /* width: 13vw;
+        height: 13vh;
+        border: solid 1px #40A2E3;
+        border-radius: 3px;
+        text-align: center;
+        position: absolute;
+        right: 80px;
+        bottom: 100px;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        align-items: center; */
+        display: none;
+    }
+
+   
+    #btnMenu {
+        
+        display: flex;
+        /* color: #fff; */
+        width: 100%;
+        height: 100%;
+        font-size: 3rem;
+        color: #fff;
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    #carrito  {
+        font-size: 3rem;
+        color: #FFF6E9;
+        /* position: absolute;
+        top: 0;
+        right: 0; */
+        /* margin: 0;
+        padding: 0; */
+    }
+
+    .titulo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        /* align-content: center; */
+    }
+
+    nav a:hover {
+        background-color: #0D9276;
+        transition-duration: 0.7s;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 5px 10px 5px 10px;
+        font-size: 1.7rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .televisor1 {
+        margin-top: 100px;
+    }
 }
