@@ -504,7 +504,6 @@ input {
         display: none;
     }
 
-   
     #btnMenu {
         
         display: flex;
@@ -558,8 +557,6 @@ input {
         margin-top: 120px;
     }
 
-    
-    
 
     .dialogo1 {
         width: 90vw;
@@ -583,7 +580,7 @@ input {
         align-items: center;
         justify-content: center;
     }
-    
+
     .textoDialogo1 {
         display: flex;
         align-items: flex-start;
@@ -627,22 +624,4 @@ input {
         
     }
 
-    /* .contenido1 {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        justify-content: flex-start;
-        align-items: start;
-        justify-items: flex-start;
-        margin-bottom: 15px;
-        border-color: #0D9276;
-    } */
-
-    /* .contenido1 p {
-        margin-bottom: 15px;
-        width: 70%;
-    } */
-
-    /* .contenido1 h4{
-        align-items: end;
-    } */
 } 
