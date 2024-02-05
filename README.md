@@ -24,8 +24,8 @@ La paleta de colores empleada fue la siguiente:
 
 ## Gif Escritorio
 
-![]()
+![](https://github.com/DuvanCamiloArenasRodriguez/proyectoHTML2/blob/main/storage/escritorioProtectoHTML2.gif)
 
 ## Gif Celular
 
-![]()
+![](https://github.com/DuvanCamiloArenasRodriguez/proyectoHTML2/blob/main/storage/celularProyectoHTML2.gif)
