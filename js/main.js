@@ -30,5 +30,5 @@ window.cerrar.addEventListener('click', () => {
 })
 
 window.salir.addEventListener('click', () => {
-    window.dialog.close()
+    modal2.close()
 })

@@ -413,8 +413,6 @@ input {
 } */
 
 
-
-
 /* Media query */
 @media (max-width: 768px) {
     #btnMenu {
@@ -573,6 +571,7 @@ input {
     .dialogo1 img {
         width: 100%;
         height: 80%;
+        object-fit: contain;
     }
     
     .imagenDialogo1 {
@@ -606,6 +605,7 @@ input {
     .dialogo2 img {
         width: 90%;
         height: 100%;
+        object-fit: contain;
     }
 
     .dialogo2 input {
